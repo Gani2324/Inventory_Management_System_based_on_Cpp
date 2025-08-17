@@ -1,41 +1,41 @@
-# 🛒 Inventory Management System (C++ + SQL)
+# 🛒 Inventory Management System (C++ + SQLite)
 
 ## 📌 Overview
-The **Inventory Management System** is a console-based C++ application integrated with SQL (SQLite) that helps businesses efficiently manage their products, suppliers, and sales.  
-It supports adding and updating stock, generating bills, and viewing reports with real-time database consistency.
+The **Inventory Management System** is a console-based application written in **C++** with an integrated **SQLite database**.  
+It is designed to help manage day-to-day operations of inventory such as maintaining product stock, handling suppliers, recording purchases, and generating customer bills.
 
 ---
 
-## ✨ Features
-- ➕ Add, update, and delete products  
-- 🏢 Manage supplier details  
-- 📦 Record purchases and update stock automatically  
-- 🧾 Generate customer bills with sales tracking  
-- 📊 Sales reports with SQL aggregates (`SUM`, `COUNT`)  
-- ⚡ SQL Triggers to prevent negative stock and ensure data consistency  
+## ✨ Key Features
+- ➕ **Add / Update / Delete Products**  
+- 🏢 **Manage Suppliers**  
+- 📦 **Record Purchases** with automatic stock updates  
+- 🧾 **Generate Bills** with itemized details  
+- 📊 **Sales Reports** using SQL queries (`SUM`, `COUNT`)  
+- ⚡ **SQL Triggers** ensure data consistency and prevent negative stock  
 
 ---
 
-## 🗂️ Database Schema
-The system uses the following main tables:  
-- **products** – Stores product details and stock  
+## 🗂️ Database Design
+The project uses the following tables:
+- **products** – Product details, stock levels, pricing  
 - **suppliers** – Supplier information  
-- **purchases** – Records purchase entries  
-- **sales** – Customer sales records  
-- **sale_items** – Itemized bill details  
+- **purchases** – Purchase records (restocking)  
+- **sales** – Customer order details  
+- **sale_items** – Line items for each bill  
 
 ---
 
-## 🛠️ Tech Stack
-- **C++17** (Application Logic)  
-- **SQLite3** (Embedded Database)  
-- **CMake/Make** (Build System)  
+## 🛠️ Technologies Used
+- **C++17** for application logic  
+- **SQLite3** for database management  
+- **CMake / g++** for compilation  
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Installation & Setup
 
-### 1. Clone the Repository
+### 1. Clone Repository
 ```bash
-git clone https://github.com/your-username/inventory-management-system.git
-cd inventory-management-system
+git clone https://github.com/Gani2324/Inventory_Management_System_based_on_Cpp.git
+cd Inventory_Management_System_based_on_Cpp
